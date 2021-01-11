@@ -22,7 +22,7 @@ export class CdkBillingAlarmStack extends cdk.Stack {
           Currency: 'JPY',
         },
       }).with({ period: cdk.Duration.hours(6) }),
-      threshold: this.node.tryGetContext('threshold') ?? 5000
+      threshold: Number(this.node.tryGetContext('threshold')) || 5000
     }).addAlarmAction(new cloudwatchAlarm.SnsAction(billingTopic))
   }
 }
