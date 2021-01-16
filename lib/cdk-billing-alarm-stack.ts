@@ -19,10 +19,10 @@ export class CdkBillingAlarmStack extends cdk.Stack {
         namespace: 'AWS/Billing',
         statistic: 'Maximum',
         dimensions: {
-          Currency: 'JPY',
+          Currency: 'USD',
         },
-      }).with({ period: cdk.Duration.hours(6) }),
-      threshold: Number(this.node.tryGetContext('threshold')) || 5000
+      }).with({ period: cdk.Duration.hours(9) }),
+      threshold: Number(this.node.tryGetContext('threshold')) || 50
     }).addAlarmAction(new cloudwatchAlarm.SnsAction(billingTopic))
   }
 }
