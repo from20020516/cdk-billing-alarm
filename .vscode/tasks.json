@@ -1,0 +1,40 @@
+{
+    "version": "2.0.0",
+    "inputs": [
+        {
+            "id": "threshold",
+            "description": "Billing threshold for activate alarm (USD)",
+            "type": "promptString",
+            "default": "50"
+        },
+        {
+            "id": "email",
+            "description": "(Optional) E-mail address",
+            "type": "promptString",
+        },
+        {
+            "id": "discord",
+            "description": "(Optional) Discord Webhook URL",
+            "type": "promptString",
+        },
+        {
+            "id": "profile",
+            "description": "(Optional) AWS profile name",
+            "type": "promptString",
+            "default": "default"
+        },
+    ],
+    "tasks": [
+        {
+            "label": "cdk deploy",
+            "type": "shell",
+            "command": [
+                "npm run cdk deploy --",
+                "--context threshold=${input:threshold}",
+                "--context email=${input:email}",
+                "--context discord=${input:discord}",
+                "--profile ${input:profile}"
+            ]
+        }
+    ]
+}
