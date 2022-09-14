@@ -11,7 +11,7 @@
     "cdk": "cdk"
   },
   "devDependencies": {
-    "@types/aws-lambda": "8.10.103",
+    "@types/aws-lambda": "8.10.104",
     "@types/jest": "27.4.1",
     "@types/node": "18.7.18",
     "aws-cdk": "2.41.0",
