@@ -15,7 +15,7 @@
     "@types/jest": "27.4.1",
     "@types/node": "18.11.15",
     "aws-cdk": "2.54.0",
-    "esbuild": "0.16.5",
+    "esbuild": "0.16.6",
     "jest": "27.5.1",
     "npm-check-updates": "12.5.4",
     "ts-jest": "27.1.3",
