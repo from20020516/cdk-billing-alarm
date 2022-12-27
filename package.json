@@ -14,7 +14,7 @@
     "@types/aws-lambda": "8.10.109",
     "@types/jest": "27.4.1",
     "@types/node": "18.11.18",
-    "aws-cdk": "2.56.1",
+    "aws-cdk": "2.57.0",
     "esbuild": "0.16.11",
     "jest": "27.5.1",
     "npm-check-updates": "12.5.4",
@@ -23,7 +23,7 @@
     "typescript": "4.9.4"
   },
   "dependencies": {
-    "aws-cdk-lib": "2.56.1",
+    "aws-cdk-lib": "2.57.0",
     "axios": "0.26.1",
     "constructs": "10.0.91",
     "source-map-support": "0.5.21"
